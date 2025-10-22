@@ -1,0 +1,39 @@
+@use './variables';
+
+.table-wrap {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: variables.$shadow-1;
+}
+
+.org-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.org-table th, .org-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.org-table th {
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(0,0,0,0.75);
+}
+
+.org-table th.sort-asc::after { content: ' ▲'; color: #888; font-size: 12px; }
+.org-table th.sort-desc::after { content: ' ▼'; color: #888; font-size: 12px; }
+
+.del-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: variables.$color-danger;
+}

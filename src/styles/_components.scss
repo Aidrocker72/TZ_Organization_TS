@@ -1,0 +1,40 @@
+@use  './variables';
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.search {
+  padding: 8px 10px;
+  min-width: 260px;
+  border-radius: variables.$radius;
+  border: 1px solid #e6e9ef;
+  outline: none;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-add {
+  @extend .btn;
+  background-color: variables.$color-primary;
+  color: #fff;
+  border: none;
+  &:hover:not(:disabled) { background-color: variables.$color-primary-hover; }
+  &:active:not(:disabled) { background-color: variables.$color-primary-active; }
+}
+
+.btn-cancel {
+  @extend .btn;
+  background: transparent;
+  border: 1px solid #d0d7df;
+}

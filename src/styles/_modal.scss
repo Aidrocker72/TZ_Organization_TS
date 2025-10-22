@@ -1,0 +1,33 @@
+@use './variables';
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-dialog {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  min-width: 360px;
+  box-shadow: 0 10px 30px rgba(10,20,30,0.12);
+}
+
+.modal-dialog h3 { margin: 0 0 12px 0; font-size: 18px; }
+.modal-dialog form label { display: block; margin-bottom: 8px; font-size: 14px; }
+.modal-dialog input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+}
+.modal-dialog .actions { display:flex; justify-content: flex-end; gap:8px; margin-top: 12px; }
+.btn-ok { @extend .btn !optional; background: variables.$color-primary; color: #fff; border: none; }
+.btn-ok:disabled { opacity: 0.6; cursor: default; }
+.address { border: 1px dashed #f0f0f0; padding: 8px; border-radius: 8px; margin-top: 6px; }

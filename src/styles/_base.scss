@@ -1,0 +1,21 @@
+@use './variables';
+
+:root {
+  font-family: variables.$font-family;
+  line-height: variables.$line-height;
+  color: variables.$color-text;
+  background-color: variables.$color-bg;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; }
+body {
+  margin: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f5f7fa;
+  color: variables.$color-text;
+}
+
+.hidden { display: none !important; }
+.container { max-width: 1100px; margin: 0 auto; }
