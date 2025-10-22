@@ -33,7 +33,7 @@
 ```bash
 # 1. Клонировать репозиторий
 git clone https://github.com/Aidrocker72/TZ_Organization_TS
-cd TZ_Organization
+cd TZ_Organization_TS
 
 # 2. Установить зависимости
 npm install
